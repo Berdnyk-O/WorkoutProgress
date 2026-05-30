@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace WorkoutProgress.ViewModels
+namespace WorkoutProgress.ViewModel
 {
     public partial class ProfileViewModel : ObservableObject
     {
