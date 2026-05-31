@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using WorkoutProgress.Services;
 using WorkoutProgress.View;
 using WorkoutProgress.ViewModel;
 
@@ -16,6 +17,8 @@ namespace WorkoutProgress
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddSingleton<DatabaseService>();
 
             builder.Services.AddSingleton<ProfilePage>();
             builder.Services.AddSingleton<ProfileViewModel>();

@@ -7,15 +7,40 @@
              Title="Profile">
 
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-
         <Label
-             Text="{Binding Weight}"
+             Text="{Binding Measurement.Weight}"
              VerticalOptions="Center" 
              HorizontalOptions="Center"/>
+
+        <Label
+             Text="{Binding Measurement.Height}"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center"/>
+
+        <Label
+            Text="{Binding Measurement.Bust}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Label
+            Text="{Binding Measurement.Waist}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Label
+            Text="{Binding Measurement.BicepsLeft}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Label
+            Text="{Binding Measurement.BicepsRight}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Label
+            Text="{Binding Measurement.Thighs}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
 
         <Button Text="Increase"
                 Command="{Binding IncreaseCommand}"/>
